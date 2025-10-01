@@ -1,0 +1,25 @@
+import java.util.Arrays;
+
+public class ArraySumAndSort {
+    public static void main(String[] args) {
+        // Sample array
+        int[] numbers = {12, 5, 8, 3, 17, 1};
+
+        // Calculate sum
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+
+        // Sort array in ascending order
+        Arrays.sort(numbers);
+
+        // Display results
+        System.out.println("Sorted array in ascending order:");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+
+        System.out.println("\nSum of array elements: " + sum);
+    }
+}
